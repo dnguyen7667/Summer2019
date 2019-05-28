@@ -1,0 +1,17 @@
+conda create --name env_name python=x.x -y
+
+(to create a virtual environment name env_name with python version x.x and -y: say ‘yes’ to all of the prompts that follow)
+
+conda activate env_name
+(to activate env_name virtual environment)
+
+conda list
+(check list of packages installed)
+
+conda env list 
+(to see what environments exist)
+
+conda install package_name
+(to install a package named package_name, if not work then use pip)
+
+If encounter inconsistent environments: try to remove the package then install them again

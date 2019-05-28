@@ -1,0 +1,40 @@
+cd project_folder
+(to get to the directory of project)
+
+
+pipenv install 
+(to install/launch a virtual env)
+
+pipenv shell
+(to activate V.E)
+
+exit
+(to exit out of the V.E)
+
+pipenv lock -r
+(to display all the packages requirement existing in current V.E)
+
+
+
+pipenv install pytest --dev
+(to install pytest but ONLY in development phase, not be shipped onto production phase)
+
+
+pipenv --rm
+(to remove the V.E completely)
+
+
+pipenv graph
+(to display dependencies of packages)
+
+
+
+
+WHEN PREPPING TO DEPLOY PRODUCT INTO PRODUCTION:
+Make sure the code run smoothly with all packages/libraries/versions...
+
+pipenv lock
+(to lock all the dependencies and make sure they are used in production phase)
+
+pip install --ignore-pipfile
+(to install all dependencies from pipfile.lock)
